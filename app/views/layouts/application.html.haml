@@ -1,0 +1,19 @@
+!!!
+%html
+%head
+    %title Doctors on Rails
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+%body
+    %header
+        %h1 Doctors on Rails
+        #tagline Learn how to write web applications in one weekend
+        
+    %nav
+        =link_to "Home", root_path
+        =link_to "What Will I Learn?", what_path
+        =link_to "Who Will Teach Me?", teachers_path
+        =link_to "Reserve Your Place", "#"
+    #main= yield
