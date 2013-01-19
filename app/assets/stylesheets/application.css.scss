@@ -90,6 +90,26 @@ header {
             &:last-child {
                 border-right:0px;
                 padding-right:0px;
+                display:inline-block;
+                margin-left:10px;
+                padding: 5px 15px;
+                text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                font-weight: 100;
+                background: #5bb900;
+                box-shadow: none;
+                border: 0;
+                color: #fff;
+                border-color: #57af17;
+                border-radius: 3px;
+                text-align: center;
+                text-decoration:none;
+            
+                &:visited, &:active, &:focus {
+                    color: #fff;
+                }
+                &:hover {
+                    background:#50a300;
+                };
             }
         }
     }
@@ -164,12 +184,6 @@ header {
     }
 }
 
-#front_page_info {
-    p {
-        font-size:17px;
-    }
-}
-
 .container {
     width:$main_width;
     margin:0px auto;
@@ -206,76 +220,89 @@ header {
     }
 }
 
-.intro {
-    font-size:18px;
-    margin-bottom:30px;
+#front_page.container {
+    p {
+        font-size:17px;
+    }
 }
 
-.teacher {
-    position:relative;
-    height:300px;
-    padding-left:320px;
-    background-size:300px 300px;
-    background-repeat:no-repeat;
-    margin-bottom:30px;
+#what.container {
     font-size:16px;
+}
+
+#teachers.container {
+
+    .intro {
+        font-size:18px;
+        margin-bottom:30px;
+    }
+
+    .teacher {
+        position:relative;
+        height:300px;
+        padding-left:320px;
+        background-size:300px 300px;
+        background-repeat:no-repeat;
+        margin-bottom:30px;
+        font-size:16px;
     
-    h3 {
-        margin:5px 0px 5px 0px;
-        font-size:25px;
-        float:left;
-        margin-right:10px;
-    }
-    .job {
-        float:left;
-        margin-top:15px;
-        font-size:13px;
-        a {}
-    }
-    .links {
-        position:absolute;
-        bottom:0px;
-        left:211px;
-        background:#fff;
-        border: 1px solid #444;
-        border-radius:5px 0px 0px 0px;
-        padding:5px;
+        h3 {
+            margin:5px 0px 5px 0px;
+            font-size:25px;
+            float:left;
+            margin-right:10px;
+        }
+        .job {
+            float:left;
+            margin-top:15px;
+            font-size:13px;
+            a {}
+        }
+        .links {
+            position:absolute;
+            bottom:0px;
+            left:211px;
+            background:#fff;
+            border: 1px solid #444;
+            border-radius:5px 0px 0px 0px;
+            padding:5px;
     
-        .twitter, .github, .website {
-            background-repeat:no-repeat;
-            background-size:20px;
-            margin-right:3px;
-            height:20px;
-            width:20px;
-            line-height:20px;
-            vertical-align:middle;
-            display:inline-block;
+            .twitter, .github, .website {
+                background-repeat:no-repeat;
+                background-size:20px;
+                margin-right:3px;
+                height:20px;
+                width:20px;
+                line-height:20px;
+                vertical-align:middle;
+                display:inline-block;
+            }
+            .twitter {
+                background-image:image-url('twitter.png');
+            }
+            .github {
+                background-image:image-url('github.png');
+            }
+            .website {
+                background-image:image-url('website.png');
+            }
         }
-        .twitter {
-            background-image:image-url('twitter.png');
+        .tagline {
+            clear:both;
+            font-size:italic;
+            padding-bottom:15px;
+            margin-bottom:15px;
+            border-bottom:1px solid #ddd;
         }
-        .github {
-            background-image:image-url('github.png');
-        }
-        .website {
-            background-image:image-url('website.png');
-        }
-    }
-    .tagline {
-        clear:both;
-        font-size:italic;
-        padding-bottom:15px;
-        margin-bottom:15px;
-        border-bottom:1px solid #ddd;
-    }
-    .bio {
-        padding-top:0px;
-        p {
-            margin:8px 0px;
-        }
-        ul {
-            padding-left:0px;
-            margin-left:30px;
+        .bio {
+            padding-top:0px;
+            p {
+                margin:8px 0px;
+            }
+            ul {
+                padding-left:0px;
+                margin-left:30px;
+            }
         }
     }
 }
