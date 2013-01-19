@@ -12,37 +12,169 @@
  *= require_tree .
  */
 
+$main_width: 1000px;
+$color_1: #222;
+
+html {
+    text-rendering: optimizelegibility;
+    font-size: 100%;
+    overflow-y: scroll;
+}
+
+body, button, input, select, textarea {
+    font-family: "proxima-nova", calibri, sans-serif;
+}
+
 body {
-    width:1000px;
-    font-family: Calibri;
     font-size:14px;
+    font-weight:100;
     margin:0px;
-    margin:0px auto;
     border:solid black;
     border-width:0px 1px 1px 1px;
+    color:$color_1;
+    background:#fff;
+}
+
+a {
+    color:blue;
+    &:visited, &:active, &:focus {
+        color:blue;
+    }
 }
 
 header {
-    background:lightpink;
-    border-bottom:1px solid black;
-    padding:10px;
+    padding:20px 0px;
+    .inner {
+        width:$main_width;
+        margin:0px auto;
+        overflow:hidden;
+    }
     h1 {
+        color:#CC0000;
         margin:0px;
-        font-size:30px;
+        font-size:35px;
+        line-height:32px;
+        font-weight:100;
+        float:left;
+        border-bottom:5px double;
+        padding-bottom:0px;
+        font-style:italic;
+        font-family:"museo-sans-condensed";
     }
     #tagline {
         font-size:18px;
     }
+
+    nav {
+        float:right;
+        padding:10px;
+        a {
+            font-size:12pt;
+            font-weight:300;
+            text-decoration:none;
+            color:#666;
+            padding:10px 20px;
+            border-right:1px solid #ddd;
+            &:visited, &:active, &:focus {
+                color:#666;
+            }
+            &:hover {
+                color:#000;
+            }
+            &:last-child {
+                border-right:0px;
+                padding-right:0px;
+            }
+        }
+    }
 }
 
-nav {
-    background:lightblue;
-    border-bottom:1px solid black;
-    padding:10px;
+#banner {
+    background-color:#444;
+    background-image:image-url('banner_strip.jpg');
+    background-size:auto 400px;
+    background-repeat:repeat-x;
+    border:solid #444;
+    border-width:1px 0px;
+    .inner {
+        background-image:image-url('banner.jpg');
+        background-repeat:no-repeat;
+        background-position:top right;
+        background-size:auto 400px;
+        margin:0px auto;
+        width:$main_width;
+        height:400px;
+            
+        .title {
+            padding-top:67px;
+            font-size:40px;
+            font-weight:300;
+            color:#fff;
+            padding-bottom:23px;
+            top:40px;
+        }
+        .tagline {
+            width:420px;
+            font-size:21px;
+            padding-bottom:20px;
+            color:#fff;
+            top:200px;
+            em {
+                text-decoration:underline;
+            }
+        }
+        .info {
+            font-size:21px;
+            padding-bottom:20px;
+            color:#fff;
+            top:200px;
+        }
+        
+        a {
+            display:inline-block;
+            font-size:21px;
+            font-weight:300;
+            padding: 12px 32px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+            font-weight: 100;
+            margin-top: 15px;
+            background: #5bb900;
+            box-shadow: none;
+            border: 0;
+            color: #fff;
+            border-color: #57af17;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration:none;
+            
+            &:visited, &:active, &:focus {
+                color: #fff;
+            }
+            &:hover {
+                background:#50a300;
+            };
+        }
+        //}
+    }
 }
 
-#main {
-    padding:10px;
+.container {
+    width:$main_width;
+    margin:0px auto;
+    padding:0px;
+    
+    h3 {
+        font-size:20pt;
+        margin-top:30px;
+        margin-bottom:20px;
+        font-weight:300;
+    }
+    p {
+        font-size:17px;
+        line-height:23px;
+        font-family: 'museo-sans';
+        font-weight: 100;
+    }
     
     #discount {
         background:green;

@@ -1,27 +1,31 @@
 /%h2 Learn How to Make Web Applications in a Weekend
 /.tagline With Jeremy Walker and Edward Wallit
 
-.question Every wished you could make web applications?
-.answer This is your opportunity to finally learn. In one weekend, we will teach you how. 
+#banner
+    .inner
+        .title Learn Web Development
+        .tagline 
+            In one weekend, we'll teach 
+            %em you 
+            to create websites and web applications. No existing knowledge required.
+        .info March 9 - 10 &#183; Earls Court, London
+        =link_to "Sign up today and receive an early-bird discount" 
+            
+.container
 
-#discount
-    %h2 Early Bird Discount
-    Only £400 for two days of expert tuition and hands-on learning.
+    %h3 Learn by doing
+    %p 
+        Over the two days you will create #{link_to "web applications", what_path} that have real-world value. You will learn #{link_to "a variety of topic and technologies", what_path}, including HTML, CSS, JavaScript, and Ruby on Rails. 
+    %p 
+        You will be taught by #{link_to "expert teachers", teachers_path} and receive
+        =succeed "." do
+            %strong 1-on-1 supervision
+        We keep class sizes small (15-20 students) to enable plenty of personal support.
+
+    %p You can work at your own pace, with advanced exercises available for those who pick things up quicker.
+
+    %h3 The weekend is just the start!
+    %p After the course you will be able to access all the resources and teaching material that you used during the course.
+    %p You will also be given access to private forums where you can ask questions and get support from teachers and fellow students as you start building your own applications. 
+
     =button_to "Reserve your place now...", method: :get
-
-%h3 Learn by doing
-%p 
-    Over two days you will learn #{link_to "a variety of topic and technologies", what_path} and create #{link_to "web applications", what_path} that have real-world value.
-%p 
-    You will be taught by #{link_to "expert teachers", teachers_path} and receive
-    =succeed "." do
-        %strong 1-on-1 supervision
-    We keep class sizes small (15-20 students) to enable plenty of personal support.
-
-%p You can work at your own pace, with advanced exercises available for those who pick parts up quicker.
-
-%h3 The weekend is just the start!
-%p After the course you will be able to access all the resources and teaching material that you used during the course.
-%p You will also be given access to private forums where you can ask questions and get support from teachers and fellow students as you start building your own applications. 
-
-=button_to "Reserve your place now...", method: :get
