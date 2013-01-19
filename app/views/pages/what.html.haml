@@ -1,59 +1,61 @@
-%h2 What Will You Learn?
+#what.container
 
-%p
-    By the end of the course you will be able to create 
-    %strong a web-based application 
-    and have enough knowledge to develop and expand your skills without further tuition.
+    %h2 What Will You Learn?
+
+    %p
+        By the end of the course you will be able to create 
+        %strong a web-based application 
+        and have enough knowledge to develop and expand your skills without further tuition.
     
-%p 
-    During the course you will create:
+    %p 
+        During the course you will create:
+        %ul
+            %li
+                an online CV
+                =succeed "," do
+                    =link_to "(view sample)", "#"
+                through which you will learn the basics of websites, and 
+            %li
+                an ePortfolio application
+                =succeed "," do
+                    =link_to "(view sample)", "#"
+                through which you gain a more detailed knowledge of web applications
+    
+    %p After the course, you will be able to create both of these application from scratch by yourself. 
+    %p You will have learnt a variety of concepts, technologies and techniques, including: 
     %ul
-        %li
-            an online CV
-            =succeed "," do
-                =link_to "(view sample)", "#"
-            through which you will learn the basics of websites, and 
-        %li
-            an ePortfolio application
-            =succeed "," do
-                =link_to "(view sample)", "#"
-            through which you gain a more detailed knowledge of web applications
+        %li How web applications work.
+        %li The basics of databases and how to create them.
+        %li The fundamentals of HTML, CSS and JavaScript.
+        %li The basics of #{link_to "Ruby on Rails", "http://rubyonrails.org", target: '_new'}
     
-%p After the course, you will be able to create both of these application from scratch by yourself. 
-%p You will have learnt a variety of concepts, technologies and techniques, including: 
-%ul
-    %li How web applications work.
-    %li The basics of databases and how to create them.
-    %li The fundamentals of HTML, CSS and JavaScript.
-    %li The basics of #{link_to "Ruby on Rails", "http://rubyonrails.org", target: :new}
-    
-%h3 What EXACTLY Will I Learn?
-%h4 Topics
-%ul
-    %li The web request cycle
-    %li Testing
-    %li Test-first development
-    %li Web Frameworks
-    %li Source Control
-    %li Deployment to #{link_to "Heroku", "http://www.heroku.com"}
-    %li ...
+    %h3 What EXACTLY Will I Learn?
+    %h4 Topics
+    %ul
+        %li The web request cycle
+        %li Testing
+        %li Test-first development
+        %li Web Frameworks
+        %li Source Control
+        %li Deployment to #{link_to "Heroku", "http://www.heroku.com", target: '_new'}
+        %li ...
    
-%h4 Technologies 
-%p You will write code and/or receive teaching on everything in this list:
-%ul
-    %li= link_to "Capybara", ""
-    %li= link_to "Cucumber", ""
-    %li= link_to "CoffeeScript", ""
-    %li= link_to "CSS", ""
-    %li= link_to "Git", ""
-    %li= link_to "Haml", ""
-    %li= link_to "HTML", ""
-    %li= link_to "Javascript", ""
-    %li= link_to "jQuery", ""
-    %li= link_to "RSpec", ""
-    %li= link_to "Ruby", ""
-    %li= link_to "Ruby on Rails", ""
-    %li= link_to "Sass", ""
-    %li= link_to "Sinatra", ""
-    %li= link_to "SQLite", ""
-    %li= link_to "WEBrick", ""
+    %h4 Technologies 
+    %p You will write code and/or receive teaching on everything in this list:
+    %ul
+        %li= link_to "Capybara", "https://github.com/jnicklas/capybara", target: '_new'
+        %li= link_to "Cucumber", "http://cukes.info/", target: '_new'
+        %li= link_to "CoffeeScript", "http://coffeescript.org/", target: '_new'
+        %li= link_to "CSS", "http://en.wikipedia.org/wiki/Cascading_Style_Sheets", target: '_new'
+        %li= link_to "Git", "https://github.com/", target: '_new'
+        %li= link_to "Haml", "http://haml.info/", target: '_new'
+        %li= link_to "HTML", "http://en.wikipedia.org/wiki/HTML", target: '_new'
+        %li= link_to "Javascript", "http://en.wikipedia.org/wiki/JavaScript", target: '_new'
+        %li= link_to "jQuery", "http://jquery.com/", target: '_new'
+        %li= link_to "RSpec", "http://rspec.info/", target: '_new'
+        %li= link_to "Ruby", "http://www.ruby-lang.org/en/", target: '_new'
+        %li= link_to "Ruby on Rails", "http://rubyonrails.org/", target: '_new'
+        %li= link_to "Sass", "http://sass-lang.com/", target: '_new'
+        %li= link_to "Sinatra", "http://www.sinatrarb.com/", target: '_new'
+        %li= link_to "SQLite", "http://www.sqlite.org/", target: '_new'
+        %li= link_to "WEBrick", "http://en.wikipedia.org/wiki/WEBrick", target: '_new'
