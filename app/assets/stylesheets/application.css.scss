@@ -29,8 +29,6 @@ body {
     font-size:14px;
     font-weight:100;
     margin:0px;
-    border:solid black;
-    border-width:0px 1px 1px 1px;
     color:$color_1;
     background:#fff;
 }
@@ -54,6 +52,11 @@ header {
         width:$main_width;
         margin:0px auto;
         overflow:hidden;
+        &>a {
+            display:block;
+            float:left;
+            text-decoration:none;
+        }
     }
     h1 {
         color:#CC0000;
@@ -61,9 +64,8 @@ header {
         font-size:35px;
         line-height:32px;
         font-weight:100;
-        float:left;
-        border-bottom:5px double;
         padding-bottom:0px;
+        border-bottom:5px double;
         font-style:italic;
         font-family:"museo-sans-condensed";
     }
@@ -73,8 +75,9 @@ header {
 
     nav {
         float:right;
-        padding:10px;
         a {
+            display:block;
+            float:right;
             font-size:12pt;
             font-weight:300;
             text-decoration:none;
@@ -86,12 +89,13 @@ header {
             }
             &:hover {
                 color:#000;
+                background:#eee;
             }
-            &:last-child {
+            &:first-child {
                 border-right:0px;
                 padding-right:0px;
-                display:inline-block;
                 margin-left:10px;
+                margin-top:5px;
                 padding: 5px 15px;
                 text-shadow: 0 1px 3px rgba(0,0,0,0.5);
                 font-weight: 100;
@@ -228,6 +232,48 @@ header {
 
 #what.container {
     font-size:16px;
+}
+
+#attendeees.container {
+    font-size:16px;
+    .field {
+        margin-bottom:10px;
+        label {
+            width:100px;
+            display:inline-block;
+        }
+        
+        #password, #username {
+            width:200px;
+            border:1px solid #aaa;
+            padding:3px;
+            font-size:16px;
+        }
+    }
+    .btn {
+        font-size:16px;
+        border-right:0px;
+        padding-right:0px;
+        margin-top:5px;
+        padding: 5px 15px;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        font-weight: 100;
+        background: #5bb900;
+        box-shadow: none;
+        border: 0;
+        color: #fff;
+        border-color: #57af17;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration:none;
+    
+        &:visited, &:active, &:focus {
+            color: #fff;
+        }
+        &:hover {
+            background:#50a300;
+        };
+    }
 }
 
 #teachers.container {

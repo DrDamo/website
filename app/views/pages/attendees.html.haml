@@ -1,0 +1,12 @@
+#attendeees.container
+    %h2 Attendees Area
+    %p Please sign to access your course material.
+    =form_tag login_path do
+        .field
+            =label_tag :username
+            =text_field_tag :username
+        .field
+            =label_tag :password
+            =password_field_tag :password
+          
+        =submit_tag "Access Material", class: 'btn'
