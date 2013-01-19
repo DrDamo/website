@@ -22,7 +22,7 @@ html {
 }
 
 body, button, input, select, textarea {
-    font-family: "proxima-nova", calibri, sans-serif;
+    font-family: 'museo-sans', calibri, sans-serif;
 }
 
 body {
@@ -35,6 +35,10 @@ body {
     background:#fff;
 }
 
+h2,h3 {
+    font-family:"proxima-nova";
+}
+
 a {
     color:blue;
     &:visited, &:active, &:focus {
@@ -43,7 +47,9 @@ a {
 }
 
 header {
+    border-bottom:1px solid #444;
     padding:20px 0px;
+    font-family:"proxima-nova";
     .inner {
         width:$main_width;
         margin:0px auto;
@@ -94,8 +100,8 @@ header {
     background-image:image-url('banner_strip.jpg');
     background-size:auto 400px;
     background-repeat:repeat-x;
-    border:solid #444;
-    border-width:1px 0px;
+    border-bottom:1px solid #444;
+    font-family:"proxima-nova";
     .inner {
         background-image:image-url('banner.jpg');
         background-repeat:no-repeat;
@@ -158,10 +164,23 @@ header {
     }
 }
 
+#front_page_info {
+    p {
+        font-size:17px;
+    }
+}
+
 .container {
     width:$main_width;
     margin:0px auto;
     padding:0px;
+    
+    h2 {
+        font-size:30pt;
+        margin-top:30px;
+        margin-bottom:20px;
+        font-weight:300;
+    }
     
     h3 {
         font-size:20pt;
@@ -170,9 +189,7 @@ header {
         font-weight:300;
     }
     p {
-        font-size:17px;
         line-height:23px;
-        font-family: 'museo-sans';
         font-weight: 100;
     }
     
@@ -185,6 +202,80 @@ header {
         text-align:center;
         h2 {
             margin-top:0px;
+        }
+    }
+}
+
+.intro {
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.teacher {
+    position:relative;
+    height:300px;
+    padding-left:320px;
+    background-size:300px 300px;
+    background-repeat:no-repeat;
+    margin-bottom:30px;
+    font-size:16px;
+    
+    h3 {
+        margin:5px 0px 5px 0px;
+        font-size:25px;
+        float:left;
+        margin-right:10px;
+    }
+    .job {
+        float:left;
+        margin-top:15px;
+        font-size:13px;
+        a {}
+    }
+    .links {
+        position:absolute;
+        bottom:0px;
+        left:211px;
+        background:#fff;
+        border: 1px solid #444;
+        border-radius:5px 0px 0px 0px;
+        padding:5px;
+    
+        .twitter, .github, .website {
+            background-repeat:no-repeat;
+            background-size:20px;
+            margin-right:3px;
+            height:20px;
+            width:20px;
+            line-height:20px;
+            vertical-align:middle;
+            display:inline-block;
+        }
+        .twitter {
+            background-image:image-url('twitter.png');
+        }
+        .github {
+            background-image:image-url('github.png');
+        }
+        .website {
+            background-image:image-url('website.png');
+        }
+    }
+    .tagline {
+        clear:both;
+        font-size:italic;
+        padding-bottom:15px;
+        margin-bottom:15px;
+        border-bottom:1px solid #ddd;
+    }
+    .bio {
+        padding-top:0px;
+        p {
+            margin:8px 0px;
+        }
+        ul {
+            padding-left:0px;
+            margin-left:30px;
         }
     }
 }
