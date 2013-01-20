@@ -14,6 +14,8 @@
 
 $main_width: 1000px;
 $color_1: #222;
+$header_bg: #fdf5e6;
+$nav_hover_bg: #f5deb3;
 
 html {
     text-rendering: optimizelegibility;
@@ -48,7 +50,7 @@ header {
     border-bottom:1px solid #444;
     padding:20px 0px;
     font-family:"proxima-nova";
-    background:#eaeaea;
+    background:$header_bg;
     .inner {
         width:$main_width;
         margin:0px auto;
@@ -90,7 +92,7 @@ header {
             }
             &:hover {
                 color:#000;
-                background:#eee;
+                background:$nav_hover_bg;
             }
             &:first-child {
                 border-right:0px;
