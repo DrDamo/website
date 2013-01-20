@@ -13,6 +13,7 @@
  */
 
 $main_width: 1000px;
+$main_padding: 30px;
 $color_1: #222;
 $header_bg: #fdf5e6;
 $nav_hover_bg: #f5deb3;
@@ -53,6 +54,7 @@ header {
     background:$header_bg;
     .inner {
         width:$main_width;
+        padding:0px $main_padding;
         margin:0px auto;
         overflow:hidden;
         &>a {
@@ -136,6 +138,7 @@ header {
         background-size:auto 400px;
         margin:0px auto;
         width:$main_width;
+        padding:0px $main_padding;
         height:400px;
             
         .title {
@@ -198,7 +201,7 @@ header {
 .container {
     width:$main_width;
     margin:0px auto;
-    padding:0px;
+    padding:0px $main_padding;
     
     h2 {
         font-size:40px;
