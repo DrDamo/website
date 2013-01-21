@@ -5,7 +5,19 @@
         = stylesheet_link_tag    "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
-    
+
+        :javascript
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17313109-3']);
+            _gaq.push(['_setDomainName', 'doctorsonrails.org']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
         %script{type:"text/javascript", src:"//use.typekit.net/dwd8tis.js"}
         :javascript
             try{Typekit.load();}catch(e){}
@@ -14,10 +26,10 @@
         %header
             .inner
                 %nav
-                    =link_to "Reserve Your Place »", "http://doctorsonrails.eventbrite.co.uk"
-                    =link_to "Attendees Area", attendees_path
+                    =link_to "Reserve&nbsp;Your&nbsp;Place&nbsp;»".html_safe, "http://doctorsonrails.eventbrite.co.uk"
+                    =link_to "Attendees&nbsp;Area".html_safe, attendees_path
                     =link_to "Teachers", teachers_path
-                    =link_to "What We Teach", what_path
+                    =link_to "What&nbsp;We&nbsp;Teach".html_safe, what_path
                     =link_to "Home", root_path
             
                 =link_to root_path do
